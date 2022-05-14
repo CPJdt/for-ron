@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>For my first</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-image: url("bgweb.png");
+        }
+        header {
+            background-color: #A45C40;
+            border-radius: 0;
+            border: 0;
+            color: white;
+            text-align: center;
+        }
+        button {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid black;
+            width: 300px;
+            height: 300px;
+            background-color: #C38370;
+            font-size: larger;
+            font-weight: bold;
+
+        }
+
+        button:hover{
+            background-image: url("ronpic6.png");
+        }
+
+        .row {
+            width: 100%;
+            position: relative;
+        }
+
+        @media (min-width: 992px) {
+            .col-lg-1, .col-lg-2, .col-lg-3 {
+                float: left;
+                }
+                .col-lg-1 {
+                width: 33.33%;
+                }
+                .col-lg-2 {
+                width: 33.33%;
+                }
+                .col-lg-3 {
+                width: 33.33%;
+                }
+            }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .col-md-1, .col-md-2, .col-md-3 {
+                float: left;
+                }
+            .col-md-1 {
+            width: 50%;
+            }
+            .col-md-2 {
+            width: 50%;
+            }
+            .col-md-3 {
+            width: 100%;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .col-sm-1, .col-sm-2, .col-sm-3 {
+                float: left;
+                }
+            .col-sm-1 {
+            width: 100%;
+            }
+            .col-sm-2 {
+            width: 100%;
+            }
+            .col-sm-3 {
+            width: 100%;
+            }
+        }
+
+        #img1 {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid black;
+            width: 300px;
+            height: 300px;
+            box-shadow: 0 1px 5px 1px #cccccc;
+            background-image: url("ronpic1.png");
+        }
+
+        #img2 {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid black;
+            width: 300px;
+            height: 300px;
+            box-shadow: 0 1px 5px 1px #cccccc;
+            background-image: url("ronpic3.png");
+        }
+
+        #img1:hover {
+            background-image: url("ronpic4.png");
+        }
+
+        #img2:hover {
+            background-image: url("ronpic5.png");
+        }
+
+        #thanks {
+            font-size: 30px;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        #img3 {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid black;
+            width: 300px;
+            height: 300px;
+            box-shadow: 0 1px 5px 1px #cccccc;
+            background-image: url("1.png");
+        }
+
+        #img4 {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid black;
+            width: 300px;
+            height: 300px;
+            box-shadow: 0 1px 5px 1px #cccccc;
+            background-image: url("3.png");
+        }
+
+        #img3:hover {
+            background-image: url("2.png");
+        }
+
+        #img4:hover {
+            background-image: url("4.png");
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div id="header1">
+            <h1 id="headertext">RON DELOS REYES</h1>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-lg-1 col-md-1 col-sm-1">
+            <div id="img1">
+            <p></p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+            <button onclick="myFunction()" id="button">Click me!</button>
+            <p id="demo"></p>
+            <script>
+                function myFunction() {
+                var txt;
+                if (confirm("Press a button!")) {
+                txt = "Thank you for being that one person that gives me butterflies in my stomach every time we talk.";
+                } else {
+                txt = "Awww try the other one";
+                }
+                document.getElementById("demo").innerHTML = txt;
+                }
+            </script>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div id="img2">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <br>
+        <br> <br> <br> <br> 
+    </div>
+    <div class="row">
+        <div class="col-lg-1 col-md-1 col-sm-1">
+            <div id="img3">
+            <p></p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+            <p id="thanks">Thank you, Ron</p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div id="img4">
+                <p></p>
+            </div>
+        </div>
+    </div>
+<div>
+    <br> <br> <br>
+</div>
+</body>
+</html>
